@@ -25,14 +25,8 @@ Below is an example of the metrics output showing the last 10 function calls:
 
 this is sample output of the metrics:
 📊 Function Execution Metrics (Last 10 calls):
-+--------+------------------+-----------------------+-----------------+----------+--------------+
-|   S.No | Function         | Start Time            |   Duration (ms) | Status   | Error        |
-+========+==================+=======================+=================+==========+==============+
-|      4 | failing_function | April 24 21:14:30.338 |               0 | error    | Sample error |
-+--------+------------------+-----------------------+-----------------+----------+--------------+
-|      3 | sample_function  | April 24 21:14:28.819 |            1003 | success  | -            |
-+--------+------------------+-----------------------+-----------------+----------+--------------+
-|      2 | sample_function  | April 24 21:14:27.297 |            1004 | success  | -            |
-+--------+------------------+-----------------------+-----------------+----------+--------------+
-|      1 | sample_function  | April 24 21:14:25.722 |            1005 | success  | -            |
-+--------+------------------+-----------------------+-----------------+----------+--------------+
+S.No | Function | Start Time | Duration (ms) | Status | Error
+4 | failing_function | April 24 21:14:30.338 | 0 | ❌ error | Sample error
+3 | sample_function | April 24 21:14:28.819 | 1003 | ✅ success | -
+2 | sample_function | April 24 21:14:27.297 | 1004 | ✅ success | -
+1 | sample_function | April 24 21:14:25.722 | 1005 | ✅ success | -
