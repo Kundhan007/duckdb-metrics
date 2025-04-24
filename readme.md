@@ -1,8 +1,38 @@
-# function call metrics using the duckdb 
+# DuckDB Function Call Metrics
 
-This is a simple example to show how to use duckdb in metrics
+A simple implementation to track and analyze function execution metrics using DuckDB.
 
-content:
-sample python function that will showcase the actual function call
-duckdb poc file that will have the required functions even a decorator to easily integrate
-a test file that can be used to test the entire process
+## Overview
+
+This project provides a framework to monitor and analyze function execution metrics in Python using DuckDB as the storage backend.
+
+### Features
+
+- Track function execution time and status
+- Record function errors and failures
+- Store metrics in DuckDB for efficient querying
+- Easy integration through decorators
+
+## Components
+
+- Python sample functions demonstrating the implementation
+- DuckDB integration with decorator support
+- Test suite for verification
+
+## Sample Output
+
+Below is an example of the metrics output showing the last 10 function calls:
+
+this is sample output of the metrics:
+📊 Function Execution Metrics (Last 10 calls):
++--------+------------------+-----------------------+-----------------+----------+--------------+
+|   S.No | Function         | Start Time            |   Duration (ms) | Status   | Error        |
++========+==================+=======================+=================+==========+==============+
+|      4 | failing_function | April 24 21:14:30.338 |               0 | error    | Sample error |
++--------+------------------+-----------------------+-----------------+----------+--------------+
+|      3 | sample_function  | April 24 21:14:28.819 |            1003 | success  | -            |
++--------+------------------+-----------------------+-----------------+----------+--------------+
+|      2 | sample_function  | April 24 21:14:27.297 |            1004 | success  | -            |
++--------+------------------+-----------------------+-----------------+----------+--------------+
+|      1 | sample_function  | April 24 21:14:25.722 |            1005 | success  | -            |
++--------+------------------+-----------------------+-----------------+----------+--------------+
